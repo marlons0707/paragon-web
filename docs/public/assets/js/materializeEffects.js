@@ -2,17 +2,19 @@
 // Instancias de javascript que necesita materialize
 // ==================================================
 
+$('.dropdown-trigger').dropdown();
+$('.modal').modal();
+$('.trigger-modal').modal();
 $('.datepicker').datepicker();
 $('.sidenav').sidenav();
 $('.fixed-action-btn').floatingActionButton();
-$('.modal').modal();
-$('.trigger-modal').modal();
 $('.materialboxed').materialbox();
 $('.tooltipped').tooltip();
 $('.collapsible').collapsible();
 $('.chips').chips();
-$('.dropdown-trigger').dropdown();
 $('.carousel').carousel();
+
+ScrollReveal().reveal('.headline');
 
 // Toasts
 function AlertToast(message,icon,color){
