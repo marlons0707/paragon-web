@@ -12,8 +12,7 @@ $('.tooltipped').tooltip();
 $('.collapsible').collapsible();
 $('.chips').chips();
 $('.dropdown-trigger').dropdown();
-
-// $('.perfectScroll').perfectScrollbar();
+$('.carousel').carousel();
 
 // Toasts
 function AlertToast(message,icon,color){

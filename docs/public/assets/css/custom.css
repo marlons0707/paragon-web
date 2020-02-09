@@ -21,22 +21,7 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  color: var(--title-primary);
 }
-
-
-/* .banner_text {
-  color: var(--title-primary);
-  display: inline;
-}
-
-.first_text {
-  font-weight: 400;
-}
-
-.second_text {
-  font-weight: 100;
-} */
 
 p {
   font-size: 16px !important;
@@ -44,12 +29,10 @@ p {
 }
 
 .text-color-menu {
-  /* font-family: 'Poppins Regular', sans-serif !important; */
   color: var(--title-primary) !important;
 }
 
 .text-color-btn {
-  /* font-family: 'Poppins Regular', sans-serif !important; */
   color: var(--title-secundary) !important;
 }
 
@@ -74,9 +57,6 @@ nav {
 
 .headroom--pinned {
   background-color: #EFEFEF !important;
-  /* background: #14243D;
-  background: -webkit-linear-gradient(45deg, #14243D 0%, #38537e 100%);
-  background: linear-gradient(45deg, #14243D 0%, #38537e 100%); */
 }
 
 nav ul li {
@@ -112,6 +92,7 @@ nav ul li {
 }
 
 /* Portada */
+
 .banner_img {
   width: 100%;
 }
@@ -147,12 +128,6 @@ nav ul li {
   }
 }
 
-/* Material Icons */
-
-/* .material-icons{
-  font-size: 30px !important;
-} */
-
 /* Parallax */
 
 .parallax-container {
@@ -160,7 +135,6 @@ nav ul li {
   overflow: hidden;
   height: 650px !important;
 }
-
 
 .offer {
   margin-left: 20px;
@@ -221,7 +195,6 @@ nav ul li {
   }
 }
 
-
 /* Botones estilos */
 
 .gradient-45deg-theme-blue {
@@ -248,6 +221,10 @@ nav ul li {
 
 /* Sections */
 
+/* SECCION EXPERIENCIA
+=====================================================
+===================================================== */
+
 .section-color-img {
   background-image: linear-gradient(
       rgb(20, 36, 61),
@@ -258,31 +235,44 @@ nav ul li {
   background-size: cover;
 }
 
-.section-color-img p,
-h3 {
+.section-color-img p, h3 {
   color: var(--paragraph-secundary);
 }
 
 
 /* Cuadros de estadisticas */
+
 .shadow-box {
   /* background: var(--primary); */
-  background: -webkit-linear-gradient(45deg, var(--secondary) 0%, var(--primary) 100%);
-  background: linear-gradient(45deg, var(--secondary) 0%, var(--primary) 100%);
+  background: transparent !important;
+  /* background: -webkit-linear-gradient(45deg, var(--secondary) 0%, var(--primary) 100%);
+  background: linear-gradient(45deg, var(--secondary) 0%, var(--primary) 100%); */
   width: 100%;
   height: 125px;
-  /* margin: 20px auto; */
+  margin: 20px auto;
 }
 
 @media only screen and (max-width: 600px) {
   .shadow-box {
     width: 100%;
-    height: 150px
+    height: 150px;
+    margin: 20px auto;
   }
 }
 
 .stats_boxes div p {
   padding: 10px;
-  border: 2px solid white;
+  border: 1px solid var(--paragraph-primary);
   border-radius: 8px;
 }
+
+.stats_boxes div p {
+  font-size: 30px !important;
+  text-align: center;
+  color: bisque;
+}
+
+
+/* FIN SECCION EXPERIENCIA
+=====================================================
+===================================================== */
