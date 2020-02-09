@@ -30,10 +30,12 @@
   <link rel="stylesheet" href="public/vendor/animatecss/animate.min.css">
 
   <!-- Perfect scrollbar -->
-  <link rel="stylesheet" href="public/vendor/perfect-scrollbar/perfect-scrollbar.css">
+  <!-- <link rel="stylesheet" href="public/vendor/perfect-scrollbar/perfect-scrollbar.css"> -->
 
   <!-- Font -->  
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,400,700&display=swap" rel="stylesheet">
+
+  <script async src="public/vendor/fontawesome/fawesome.js"></script> -->
 
   
 </head>
@@ -49,7 +51,7 @@
                     <a href="#home" class="brand-logo vertical-align-center">
                         <img src="public/assets/img/logo/logo_black.png" class="vertical-middle">
                     </a>
-                    <a href="#!" data-target="mobile-demo" class="sidenav-trigger">
+                    <a href="#!" data-target="mobile-box" class="sidenav-trigger">
                         <i class="large material-icons black-text">menu</i>
                     </a>
                     <ul class="right hide-on-med-and-down">
@@ -63,7 +65,7 @@
             </nav>
         </div>
         
-        <ul class="sidenav" id="mobile-demo">
+        <ul class="sidenav" id="mobile-box">
             <li><a class="text-color-menu" href="#!">Inicio</a></li>
             <li><a class="text-color-menu" href="#!">¿Quiénes somos?</a></li>
             <li><a class="text-color-menu" href="#!">Noticias</a></li>
@@ -83,7 +85,7 @@
                     <div class="col s12 m12 l6 animated fadeInLeftBig" id="banner_div">
                         <div class="section center">
                                 <img class="banner_img" src="public/assets/img/portada/logo_text_black.png" alt="">
-                                <p>Especializados en la mejora continua de tu empresa o negocio! </p>
+                                <p>Specialized in the continuous improvement of your company or business!</p>
                                 <a href="#!" class="btn waves-effect waves-light gradient-45deg-theme-blue mt-2 btn z-depth-5 text-color-btn">Learn More</a>
                                 <a href="#!" class="btn waves-effect waves-light gradient-45deg-theme-brown mt-2 btn z-depth-5 text-color-btn">Contact</a>
                         </div>
@@ -113,17 +115,17 @@
             <ul>
                 <li>
                     <a class="btn-floating gradient-45deg-theme-white" href="#!">
-                        <i class="material-icons black-text">supervisor_account</i>
-                    </a>
-                </li>
-                <li>
-                    <a class="btn-floating gradient-45deg-theme-white" href="#!">
-                        <i class="material-icons black-text">access_time</i>
-                    </a>
-                </li>
-                <li>
-                    <a class="btn-floating gradient-45deg-theme-white" href="#!">
                         <i class="material-icons black-text">phone</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating gradient-45deg-theme-white" href="#!">
+                        <i class="fab fa-facebook black-text"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating gradient-45deg-theme-white" href="#!">
+                        <i class="fab fa-twitter black-text"></i>
                     </a>
                 </li>
             </ul>
@@ -135,35 +137,36 @@
     <section class="section section-color-img">
 
         <div class="container">
-            
             <!-- Texto -->
-            <div _class="col s12 m6 l6">
+            <div class="section" style="padding: 10px;">
                 <div class="left-align">
-                    <h3>Experiencia</h3>
-                    <p>Con años de experiencia en el sector de producción y mejora continua, tu negocio o empresa alcanzará el éxito.</p>
-                    <a href="#!" class="btn waves-effect waves-light gradient-45deg-theme-brown mt-2 btn z-depth-5 text-color-btn">Leer más</a>
+                    <h3>EXPERIENCE</h3>
+                    <p>With years of experience in the production and continuous improvement sector, your business or company will achieve success.</p>
+                    <a href="#!" class="btn waves-effect waves-light gradient-45deg-theme-brown mt-2 btn z-depth-5 text-color-btn">LEARN MORE</a>
                 </div>
             </div>
     
             <!-- Cuadros -->    
             <div class="row">
-                <div class="col s12 m4 l2">
-                    <p class="z-depth-0 shadow-demo">10K</p>
-                </div>
-                <div class="col s12 m4 l2">
-                    <p class="z-depth-1 shadow-demo">100%</p>
-                </div>
-                <div class="col s12 m4 l2">
-                    <p class="z-depth-2 shadow-demo">20 Años</p>
-                </div>
-                <div class="col s12 m4 l2">
-                    <p class="z-depth-3 shadow-demo">No sé</p>
-                </div>
-                <div class="col s12 m4 l2">
-                    <p class="z-depth-4 shadow-demo">IT</p>
-                </div>
-                <div class="col s12 m4 l2">
-                    <p class="z-depth-5 shadow-demo">Design</p>
+                <div class="stats_boxes">
+                    <div class="col s12 m4 l2">
+                        <p class="headline z-depth-0 shadow-box">10K</p>
+                    </div>
+                    <div class="col s12 m4 l2">
+                        <p class="headline z-depth-1 shadow-box">100%</p>
+                    </div>
+                    <div class="col s12 m4 l2">
+                        <p class="headline z-depth-2 shadow-box">20 Años</p>
+                    </div>
+                    <div class="col s12 m4 l2">
+                        <p class="headline z-depth-3 shadow-box">No sé</p>
+                    </div>
+                    <div class="col s12 m4 l2">
+                        <p class="headline z-depth-4 shadow-box">IT</p>
+                    </div>
+                    <div class="col s12 m4 l2">
+                        <p class="headline z-depth-5 shadow-box">Design</p>
+                    </div>
                 </div>
             </div>
 
@@ -183,6 +186,9 @@
 
     <!-- jQuery -->
     <script type="text/javascript" src="public/vendor/jquery/jquery-2.1.1.min.js"></script>
+
+    <!-- Efecto scroll -->
+    <script src="public/vendor/jquery/scrollreveal/scrollreveal.js"></script>
 
     <!-- Materialize CSS  --> 
     <script type="text/javascript" src="public/vendor/materialize/js/materialize.min.js"></script>
@@ -272,6 +278,11 @@
         drift.load('6ashbsefxhx7');
     </script>
     <!-- End of Async Drift Code -->
+
+    <!-- scroll reveale -->
+    <script>
+        ScrollReveal().reveal('.headline');
+    </script>
 
 </body>
 
