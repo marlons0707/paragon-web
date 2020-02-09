@@ -55,9 +55,9 @@
 
                     <ul class="right hide-on-med-and-down">
                         <li><a class="text-color-menu" href="javascript:void(0)">Home</a></li>
-                        <li><a class="text-color-menu" href="javascript:void(0)">About Us</a></li>
-                        <li><a class="text-color-menu dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Services<i class="material-icons right">arrow_drop_down</i></a></li>
-                        <li><a class="text-color-menu dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Experience<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a class="text-color-menu dropdown-trigger" href="javascript:void(0)" data-target="about_dropdown">About Us<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a class="text-color-menu dropdown-trigger" href="javascript:void(0)" data-target="services_dropdown">Services<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a class="text-color-menu dropdown-trigger" href="javascript:void(0)" data-target="experience_dropdown">Experience<i class="material-icons right">arrow_drop_down</i></a></li>
                         <li><a class="text-color-menu" href="javascript:void(0)">Contact</a></li>
                     </ul>
                 </div>
@@ -65,19 +65,27 @@
         </div>
         <!-- FIN NAVBAR -->
 
-        <!-- Dropdown Structure -->
-        <ul id="dropdown1" class="dropdown-content">
-            <li><a class="text-color-menu" href="javascript:void(0)">one</a></li>
-            <li><a class="text-color-menu" href="javascript:void(0)">two</a></li>
-            <li class="divider"></li>
-            <li><a class="text-color-menu" href="javascript:void(0)">three</a></li>
+        <!-- Dropdown About us -->
+        <ul id="about_dropdown" class="dropdown-content">
+            <li><a class="text-color-menu waves-effect waves-dark" href="javascript:void(0)">¿Why Paragon?</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="javascript:void(0)">7 Sides <br>of the diamond concept</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="javascript:void(0)">The impact of BPR</a></li>
+        </ul>
+
+        <!-- Dropdown Services -->
+        <ul id="services_dropdown" class="dropdown-content">
+            <li><a class="text-color-menu waves-effect waves-dark" href="javascript:void(0)">Consulting</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="javascript:void(0)">Lean Tools</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="javascript:void(0)">Traning & Certifications</a></li>
         </ul>
         
-        <ul id="dropdown2" class="text-color-menu dropdown-content">
-            <li><a href="javascript:void(0)">one</a></li>
-            <li><a href="javascript:void(0)">two</a></li>   
-            <li class="divider"></li>
-            <li><a href="javascript:void(0)">three</a></li>
+        <!-- Dropdown Experience -->
+        <ul id="experience_dropdown" class="text-color-menu dropdown-content">
+            <li><a class="text-color-menu waves-effect waves-dark" href="javascript:void(0)">Industries &<br>Countries</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="javascript:void(0)">Participants</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="javascript:void(0)">Technology</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="javascript:void(0)">Forum</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="javascript:void(0)">Business<br>Partners</a></li>
         </ul>
     </header>
 
@@ -85,24 +93,59 @@
     <!--  ASIDE -->
     <aside>
         <ul id="slide-out" class="side-nav sidenav">
-          
-            <li>
-                <a class="collapsible-header waves-effect waves-cyan" href="http://pdm.tata/crm/" target="_blank">
-                <i class="material-icons">live_help</i>
-                <span> Ayuda</span>
-                </a>
+        
+            <li><a class="text-color-menu waves-effect waves-dark" href="#!">Home</a></li>
+       
+            <!-- About Us -->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li>
+                    <a class="collapsible-header">About Us<i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a class="text-color-menu waves-effect waves-dark" href="#!">¿Why Paragon?</a></li>
+                        <li><a class="text-color-menu waves-effect waves-dark" href="#!">The impact of BPR</a></li>
+                        <li><a class="text-color-menu waves-effect waves-dark" href="#!">7 Sides of the diamond</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
             </li>
-
-            <li>
-                <div class="divider"></div>
+            
+            <!-- Services -->
+            <li class="no-padding">
+              <ul class="collapsible collapsible-accordion">
+                <li>
+                  <a class="collapsible-header">Services<i class="material-icons">arrow_drop_down</i></a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a class="text-color-menu waves-effect waves-dark" href="#!">Consulting</a></li>
+                      <li><a class="text-color-menu waves-effect waves-dark" href="#!">Lean Tools</a></li>
+                      <li><a class="text-color-menu waves-effect waves-dark" href="#!">Traning & Certifications</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
             </li>
-
-            <li>
-                <a class="collapsible-header waves-effect waves-cyan" href="../process/usuario.php?op=salir">
-                <i class="material-icons">keyboard_tab</i>
-                <span> Cerrar</span>
-                </a>
+            
+            <!-- Experience -->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li>
+                    <a class="collapsible-header">Experience<i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a class="text-color-menu waves-effect waves-dark" href="#!">Industries & Countries</a></li>
+                        <li><a class="text-color-menu waves-effect waves-dark" href="#!">Participants</a></li>
+                        <li><a class="text-color-menu waves-effect waves-dark" href="#!">Technology</a></li>
+                        <li><a class="text-color-menu waves-effect waves-dark" href="#!">Forum</a></li>
+                        <li><a class="text-color-menu waves-effect waves-dark" href="#!">Business Partners</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
             </li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="#!">Contact</a></li>
 
         </ul>
       </aside>
