@@ -123,6 +123,30 @@ nav ul li {
   }
 }
 
+@media (min-width: 400px) and (max-width: 520px)  { 
+  #banner_div {
+    margin-top: 10%;
+    padding: 10%;
+    margin-bottom: -10%;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 990px)  { 
+  #banner_div {
+    margin-top: 25%;
+    padding: 10%;
+    margin-bottom: -10%;
+  }
+}
+
+@media (min-width: 991px) {
+  #banner_div {
+    margin-top: 5%;
+    padding: 60px;
+    margin-bottom: 0%;
+  }
+}
+
 /* Material Icons */
 
 /* .material-icons{
@@ -214,8 +238,8 @@ nav ul li {
 
 .gradient-45deg-theme-white {
   background: #EFEFEF;
-  background: -webkit-linear-gradient(45deg, #EFEFEF 0%, #ffffff 100%);
-  background: linear-gradient(45deg, #ffffff 0%,  100%);
+  background: -webkit-linear-gradient(45deg, #EFEFEF 0%, #EFEFEF 100%);
+  background: linear-gradient(45deg, #EFEFEF 0%,  100%);
 }
 
 .gradient-45deg-theme.gradient-shadow {
