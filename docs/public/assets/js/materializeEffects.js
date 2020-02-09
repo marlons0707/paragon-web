@@ -2,7 +2,10 @@
 // Instancias de javascript que necesita materialize
 // ==================================================
 
-$('.dropdown-trigger').dropdown();
+$('.dropdown-trigger').dropdown({
+    'hover':true
+});
+
 $('.modal').modal();
 $('.trigger-modal').modal();
 $('.datepicker').datepicker();

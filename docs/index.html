@@ -2,7 +2,8 @@
     Item Name: Paragon Engineering Web Page
     Version: 1.0
     Author: Marlon Saravia
-    Author Email: <marlons0707@gmail.com>
+    Email: <marlons0707@gmail.com>
+    Date: 2020/02/09
 ================================================================================ -->
 
 <!DOCTYPE html>
@@ -29,11 +30,11 @@
   <!-- Animate CSS -->
   <link rel="stylesheet" href="public/vendor/animatecss/animate.min.css">
 
-  <!-- Font -->  
+  <!-- Google Fonts -->  
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,400,700&display=swap" rel="stylesheet">
 
+  <!-- Fontawesome Icons -->
   <script async src="public/vendor/fontawesome/fawesome.js"></script>
-
   
 </head>
 
@@ -42,52 +43,71 @@
     <header id="header" class="headroom page-topbar">
 
         <!-- NAVBAR -->
-
-        <!-- Dropdown Structure -->
-        <ul id="dropdown1" class="dropdown-content">
-            <li><a class="text-color-menu" href="#!">one</a></li>
-            <li><a class="text-color-menu" href="#!">two</a></li>
-            <li><a class="text-color-menu dropdown-trigger" href="#!" data-target="dropdown2">Services<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li class="divider"></li>
-            <li><a class="text-color-menu" href="#!">three</a></li>
-        </ul>
-        
-        <ul id="dropdown2" class="text-color-menu dropdown-content">
-            <li><a href="#!">one</a></li>
-            <li><a href="#!">two</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">three</a></li>
-        </ul>
-
-
         <div class="navbar-fixed">
             <nav class="navbar-fixed box-shadow-none">
                 <div class="nav-wrapper"> 
+
                     <a href="#home" class="brand-logo vertical-align-center">
                         <img src="public/assets/img/logo/logo_black.png" class="vertical-middle">
                     </a>
-                    <a href="#!" data-target="mobile-box" class="sidenav-trigger">
-                        <i class="large material-icons black-text">menu</i>
-                    </a>
+
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+
                     <ul class="right hide-on-med-and-down">
-                        <li><a class="text-color-menu" href="#!">Home</a></li>
-                        <li><a class="text-color-menu" href="#!">About Us</a></li>
-                        <li><a class="text-color-menu dropdown-trigger" href="#!" data-target="dropdown1">Services<i class="material-icons right">arrow_drop_down</i></a></li>
-                        <li><a class="text-color-menu" href="#!">Contact</a></li>
+                        <li><a class="text-color-menu" href="javascript:void(0)">Home</a></li>
+                        <li><a class="text-color-menu" href="javascript:void(0)">About Us</a></li>
+                        <li><a class="text-color-menu dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Services<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a class="text-color-menu dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Experience<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a class="text-color-menu" href="javascript:void(0)">Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
-        
-        <ul class="sidenav" id="mobile-box">
-            <li><a class="text-color-menu" href="#!">Home</a></li>
-            <li><a class="text-color-menu" href="#!">About Us</a></li>
-            <li><a class="text-color-menu dropdown-trigger" href="#!" data-target="dropdown1">Services<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a class="text-color-menu" href="#!">Contact</a></li>
-        </ul>
         <!-- FIN NAVBAR -->
 
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a class="text-color-menu" href="javascript:void(0)">one</a></li>
+            <li><a class="text-color-menu" href="javascript:void(0)">two</a></li>
+            <li class="divider"></li>
+            <li><a class="text-color-menu" href="javascript:void(0)">three</a></li>
+        </ul>
+        
+        <ul id="dropdown2" class="text-color-menu dropdown-content">
+            <li><a href="javascript:void(0)">one</a></li>
+            <li><a href="javascript:void(0)">two</a></li>   
+            <li class="divider"></li>
+            <li><a href="javascript:void(0)">three</a></li>
+        </ul>
     </header>
+
+
+    <!--  ASIDE -->
+    <aside>
+        <ul id="slide-out" class="side-nav sidenav">
+          
+            <li>
+                <a class="collapsible-header waves-effect waves-cyan" href="http://pdm.tata/crm/" target="_blank">
+                <i class="material-icons">live_help</i>
+                <span> Ayuda</span>
+                </a>
+            </li>
+
+            <li>
+                <div class="divider"></div>
+            </li>
+
+            <li>
+                <a class="collapsible-header waves-effect waves-cyan" href="../process/usuario.php?op=salir">
+                <i class="material-icons">keyboard_tab</i>
+                <span> Cerrar</span>
+                </a>
+            </li>
+
+        </ul>
+      </aside>
+    <!-- FIN ASIDE -->
+
 
     <div id="home" style="padding-left: 0px;" class="scrollspy">
 
@@ -99,15 +119,15 @@
                         <div class="section center">
                                 <img class="banner_img" src="public/assets/img/portada/logo_text_black.png" alt="">
                                 <p>¡Specialized in the continuous improvement of your company or business!</p>
-                                <a href="#!" class="btn waves-effect waves-light gradient-45deg-theme-blue mt-2 btn z-depth-5 text-color-btn">Learn More</a>
-                                <a href="#!" class="btn waves-effect waves-light gradient-45deg-theme-brown mt-2 btn z-depth-5 text-color-btn">Contact</a>
+                                <a href="javascript:void(0)" class="btn waves-effect waves-light gradient-45deg-theme-blue mt-2 btn z-depth-5 text-color-btn">Learn More</a>
+                                <a href="javascript:void(0)" class="btn waves-effect waves-light gradient-45deg-theme-brown mt-2 btn z-depth-5 text-color-btn">Contact</a>
                         </div>
                     </div>
 
                     <div class="animated fadeInRightBig">
                         <div class="col s12 m12 l6">
                             <div class="center">
-                                <img class="responsive-img" src="public/assets/img/portada/Sides_of_the_dimond.png" class="circle" alt="info">
+                                <img class="responsive-img" src="public/assets/img/portada/Sides_of_the_diamond_design_by_kawale.png" class="circle" alt="info">
                             </div>
                         </div>
                     </div>
@@ -121,22 +141,22 @@
     <!-- FLOTANTE - REDES SOCIALES -->
     <div>
         <div class="fixed-action-btn">
-            <a class="btn-floating btn-large waves-effect waves-light gradient-45deg-theme-white">
+            <a class="btn-floating btn-large waves-effect waves-dark gradient-45deg-theme-white">
                 <i class="large material-icons black-text">add</i>
             </a>
             <ul>
                 <li>
-                    <a class="btn-floating gradient-45deg-theme-white" href="#!">
+                    <a class="btn-floating gradient-45deg-theme-white" href="javascript:void(0)">
                         <i class="material-icons black-text">phone</i>
                     </a>
                 </li>
                 <li>
-                    <a class="btn-floating gradient-45deg-theme-white" href="#!">
+                    <a class="btn-floating gradient-45deg-theme-white" href="javascript:void(0)">
                         <i class="fab fa-facebook black-text"></i>
                     </a>
                 </li>
                 <li>
-                    <a class="btn-floating gradient-45deg-theme-white" href="#!">
+                    <a class="btn-floating gradient-45deg-theme-white" href="javascript:void(0)">
                         <i class="fab fa-twitter black-text"></i>
                     </a>
                 </li>
@@ -156,7 +176,7 @@
                         <div class="left-align">
                             <h3>EXPERIENCE</h3>
                             <p>With years of experience in the production and continuous improvement sector, your business or company will achieve success.</p>
-                            <a href="#!" class="btn waves-effect waves-light gradient-45deg-theme-brown mt-2 btn z-depth-5 text-color-btn">LEARN MORE</a>
+                            <a href="javascript:void(0)" class="btn waves-effect waves-light gradient-45deg-theme-brown mt-2 btn z-depth-5 text-color-btn">LEARN MORE</a>
                         </div>
                     </div>
                 </div>
@@ -166,7 +186,7 @@
                     <div _class="row">
                         <div class="stats_boxes">
                             <div class="col s12 m4 l4">
-                                <p class="headline z-depth-4 shadow-box">10K</p>
+                                <p class="headline z-depth-4 shadow-box hoverable">10K</p>
                             </div>
                             <div class="col s12 m4 l4">
                                 <p class="headline z-depth-4 shadow-box">100%</p>
@@ -199,13 +219,13 @@
             <!-- Texto -->
             <div class="section" style="padding: 10px;">
                 <div class="center-align">
-                    <h3 class="grey-text">CLIENTS</h3>
+                    <h3 class="headline grey-text">CLIENTS</h3>
                 </div>
             </div>
     
             <!-- Collapsible -->    
             <div class="row">
-                <ul class="collapsible">
+                <ul class="headline collapsible">
                     <li>
                       <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
                       <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
@@ -232,12 +252,11 @@
 
     <!-- TERCERA SECCION -->
     <section class="section">
-
         <div class="container">
             <!-- Texto -->
             <div class="section" style="padding: 10px;">
                 <div class="center-align">
-                    <h3 class="grey-text">COUNTRIES</h3>
+                    <h3 class="headline grey-text">COUNTRIES</h3>
                 </div>
             </div>
     
@@ -246,7 +265,7 @@
 
                 <div class="col s12 m12 l12">
                     
-                    <div class="card col s12 m4 l3">
+                    <div class="headline card col s12 m4 l3">
                         <div class="card-image waves-effect waves-block waves-light">
                           <img class="activator" src="public/assets/img/page/Imagen49.png">
                         </div>
@@ -260,7 +279,7 @@
                         </div>
                     </div>
 
-                    <div class="card col s12 m4 l3">
+                    <div class="headline card col s12 m4 l3">
                         <div class="card-image waves-effect waves-block waves-light">
                           <img class="activator" src="public/assets/img/page/Imagen50.png">
                         </div>
@@ -274,7 +293,7 @@
                         </div>
                     </div>
 
-                    <div class="card col s12 m4 l3">
+                    <div class="headline card col s12 m4 l3">
                         <div class="card-image waves-effect waves-block waves-light">
                           <img class="activator" src="public/assets/img/page/Imagen51.png">
                         </div>
@@ -288,7 +307,7 @@
                         </div>
                     </div>
 
-                    <div class="card col s12 m4 l3">
+                    <div class="headline card col s12 m4 l3">
                         <div class="card-image waves-effect waves-block waves-light">
                           <img class="activator" src="public/assets/img/page/Imagen52.png">
                         </div>
@@ -304,11 +323,8 @@
 
 
                 </div>
-
             </div>
-
         </div>
-
     </section>
     <!-- FIN TERCERA SECCION -->
 
@@ -328,12 +344,12 @@
                         <div class="left-align">
                             <h3>LEAN SIX SIGMA</h3>
                             <p>With years of experience in the production and continuous improvement sector, your business or company will achieve success.</p>
-                            <a href="#!" class="btn waves-effect waves-light gradient-45deg-theme-brown mt-2 btn z-depth-5 text-color-btn">LEARN MORE</a>
+                            <a href="javascript:void(0)" class="btn waves-effect waves-light gradient-45deg-theme-brown mt-2 btn z-depth-5 text-color-btn">LEARN MORE</a>
                         </div>
                     </div>
                 </div>
         
-                <!-- Cuadros -->    
+                <!-- Carousel -->    
                <div class="row">
 
                     <div class="carousel">
@@ -358,8 +374,6 @@
     </footer>
 
 
-
-
     <!-- jQuery -->
     <script type="text/javascript" src="public/vendor/jquery/jquery-2.1.1.min.js"></script>
 
@@ -371,13 +385,11 @@
      
     <!-- Efectos JS para materialize -->
     <script type="text/javascript" src="public/assets/js/materializeEffects.js"></script>
- 
-    <!-- Perfect scrollbar -->
-    <script type="text/javascript" src="public/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 
     <script type="text/javascript" src="public/assets/js/landing.js"></script>
 
     <script type="text/javascript" src="public/assets/js/headroom.js"></script>
+
 
     <script>
         $(document).ready(function () {
@@ -454,11 +466,6 @@
         drift.load('6ashbsefxhx7');
     </script>
     <!-- End of Async Drift Code -->
-
-    <!-- scroll reveale -->
-    <script>
-        
-    </script>
 
 </body>
 
