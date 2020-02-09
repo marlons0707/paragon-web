@@ -1,0 +1,70 @@
+
+Insuficiente Cantidad: LT-WG0-701-0105
+Orden: T62012
+Requiere: 36
+Lote: WOCT_LT-WG0-701-0105
+
+Insuficiente Cantidad: MP0303036
+Orden: T64344
+Requiere: 2
+Lote: 251-9502942_MP0303036
+
+Insuficiente Cantidad: MP0303413
+Orden: T64914
+Requiere: 71
+Lote: 330-9503596_MP0303413
+
+Insuficiente Cantidad: MP0500150
+Orden: T65270
+Requiere: 1
+Lote: L-7522_MP0500150
+
+Insuficiente Cantidad: MP0706449
+Orden: T65177
+Requiere: 478
+Lote: 330-9503706_MP0706449
+
+Insuficiente Cantidad: MP0707668
+Orden: T65302
+Requiere: 26
+Lote: 330-9503689_MP0707668
+
+Insuficiente Cantidad: MP0708648
+Orden: T66324
+Requiere: 484
+Lote: 330-9503556_MP0708648
+
+Insuficiente Cantidad: MP0708650
+Orden: T66309
+Requiere: 784
+Lote: 330-9503556_MP0708650
+
+Insuficiente Cantidad: MP0709450
+Orden: T64476
+Requiere: 65
+Lote: 330-9503495_MP0709450
+
+Insuficiente Cantidad: MP0709480
+Orden: T63941
+Requiere: 32
+Lote: 251-9552777_MP0709480
+
+Insuficiente Cantidad: MP0801458
+Orden: T64467
+Requiere: 17
+Lote: 330-9503415_MP0801458
+
+Insuficiente Cantidad: PU-001-212-0820
+Orden: T64416
+Requiere: 4.1
+Lote: TA-008217_PU-001-212-0820
+
+Insuficiente Cantidad: PU-001-212-0820
+Orden: T64623
+Requiere: 1.8
+Lote: TA-008217_PU-001-212-0820
+
+Insuficiente Cantidad: SP-001-402-0148
+Orden: T64741
+Requiere: 11.75
+Lote: 119-0000000_001-402148

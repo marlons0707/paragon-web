@@ -1,22 +1,56 @@
 /* Theme */
 
 :root {
-  --deg_ini_color: #A22A2E;
-  --deg_fin_color: #A22A2E;  
+  --primary: #0074AE;
+  --secondary: #019BC4;
+  --constrast-primary: #666666;
+  --constrast-secondary: #a0a0a0;
+  --title-primary: #111111;
+  --title-secundary: #ffff;
+  --paragraph-primary: #666666;
+  --paragraph-secundary: #ffff;
 }
 
 /* Font */
 
-body{
-	font-family: 'Poppins', sans-serif;
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6, p{
-	font-family: 'Poppins', sans-serif !important;	
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--title-primary);
 }
 
-p{
-	font-size: 16px !important;
+
+/* .banner_text {
+  color: var(--title-primary);
+  display: inline;
+}
+
+.first_text {
+  font-weight: 400;
+}
+
+.second_text {
+  font-weight: 100;
+} */
+
+p {
+  font-size: 16px !important;
+  color: var(--paragraph-primary);
+}
+
+.text-color-menu {
+  /* font-family: 'Poppins Regular', sans-serif !important; */
+  color: var(--title-primary) !important;
+}
+
+.text-color-btn {
+  /* font-family: 'Poppins Regular', sans-serif !important; */
+  color: var(--title-secundary) !important;
 }
 
 /* Logo */
@@ -25,7 +59,7 @@ header .brand-logo img {
   height: auto !important;
   width: 42px !important;
   margin-top: -2px;
-  margin-left:10px; 
+  margin-left: 10px;
 }
 
 header .brand-logo {
@@ -39,36 +73,54 @@ nav {
 }
 
 .headroom--pinned {
-  background: #14243D;
+  background-color: #EFEFEF !important;
+  /* background: #14243D;
   background: -webkit-linear-gradient(45deg, #14243D 0%, #38537e 100%);
-  background: linear-gradient(45deg, #14243D 0%, #38537e 100%);
+  background: linear-gradient(45deg, #14243D 0%, #38537e 100%); */
 }
 
-nav ul li{
+nav ul li {
   padding-top: 5px !important;
 }
 
 /* Banner */
 
-.head-banner{
-	background-image: url("../img/portada/luz_gris.jpg");
-	background-size:  cover;
+.head-banner {
+  background-image: url("../img/portada/blanco.jpg");
+  background-size: cover;
 }
 
-.banner{
-	height:calc(100vh) !important;
+.banner {
+  height: calc(100vh) !important;
 }
 
 @keyframes animatedBackground {
-  from { background-position: 0 0; }
-  to { background-position: 400% 0%; }
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 400% 0%;
+  }
 }
 
-#animate-area { 
+#animate-area {
   background-position: 0px 0px;
   background-repeat: repeat-x;
 
   animation: animatedBackground 100s linear infinite;
+}
+
+/* Portada */
+.banner_img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .banner_img {
+    margin-left: 5%;
+
+  }
 }
 
 /* Material Icons */
@@ -80,14 +132,14 @@ nav ul li{
 /* Parallax */
 
 .parallax-container {
-    position: relative;
-    overflow: hidden;
-    height: 650px !important;
+  position: relative;
+  overflow: hidden;
+  height: 650px !important;
 }
 
 
-.offer{
-  margin-left: 20px; 
+.offer {
+  margin-left: 20px;
   background: #FF5252;
   background: -webkit-linear-gradient(45deg, #FF5252 0%, #f48fb1 100%);
   background: linear-gradient(45deg, #FF5252 0%, #f48fb1 100%);
@@ -102,19 +154,16 @@ nav ul li{
 /* Headroom CSS */
 
 .headroom {
-    position: fixed;
-    z-index: 9998;
-    top: 0;
-    left: 0;
-    right: 0;
-    -webkit-transition: .25s
-    -o-transition: .25s
-    -moz-transition: .25s
-    -ms-transition: .25s
-    transition: transform .25s ease-in-out;
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: .25s -o-transition: .25s -moz-transition: .25s -ms-transition: .25s transition: transform .25s ease-in-out;
 }
+
 .headroom--unpinned {
-    top: -108px;
+  top: -108px;
   -webkit-transition: .25s;
   -o-transition: .25s;
   -moz-transition: .25s;
@@ -128,7 +177,7 @@ nav ul li{
 }
 
 .headroom--pinned {
-   top: 0;
+  top: 0;
   -webkit-transition: .5s;
   -o-transition: .5s;
   -moz-transition: .5s;
@@ -138,25 +187,70 @@ nav ul li{
 
 /*Vertical Align*/
 
-.vertical-middle{
+.vertical-middle {
   vertical-align: middle;
 }
 
 @media only screen and (min-width: 601px) {
   .navbar-fixed {
-      height: 70px !important;
+    height: 70px !important;
   }
 }
 
 
 /* Botones estilos */
 
-.gradient-45deg-theme {
-  background: #357c9b;
-  background: -webkit-linear-gradient(45deg, #357c9b 0%, #14243D 100%);
-  background: linear-gradient(45deg, #357c9b 0%, #14243D 100%);
+.gradient-45deg-theme-blue {
+  background: var(--primary);
+  background: -webkit-linear-gradient(45deg, var(--secondary) 0%, var(--primary) 100%);
+  background: linear-gradient(45deg, var(--secondary) 0%, var(--primary) 100%);
+}
+
+.gradient-45deg-theme-brown {
+  background: var(--constrast-primary);
+  background: -webkit-linear-gradient(45deg, var(--constrast-primary) 0%, var(--constrast-secondary) 100%);
+  background: linear-gradient(45deg, var(--constrast-primary) 0%, var(--constrast-secondary) 100%);
+}
+
+.gradient-45deg-theme-white {
+  background: #EFEFEF;
+  background: -webkit-linear-gradient(45deg, #EFEFEF 0%, #ffffff 100%);
+  background: linear-gradient(45deg, #ffffff 0%,  100%);
 }
 
 .gradient-45deg-theme.gradient-shadow {
   box-shadow: 0 6px 20px 0 rgba(244, 143, 177, 0.5);
+}
+
+/* Sections */
+
+.section-color-img {
+  background-image: linear-gradient(
+      rgb(20, 36, 61),
+      rgba(20, 36, 61, 0.726)),
+        url(https://www.comolademo.es/demos/colorear-foto.jpg);
+  /* width: 100%;
+  height: 400px; */
+  background-size: cover;
+}
+
+.section-color-img p,
+h3 {
+  color: var(--paragraph-secundary);
+}
+
+
+/* Cuadros de estadisticas */
+.shadow-demo {
+  background-color: var(--secondary);
+  width: 125px;
+  height: 125px;
+  /* margin: 20px auto; */
+}
+
+@media only screen and (max-width: 600px) {
+  .shadow-demo {
+    width: 150px;
+    height: 150px
+  }
 }
