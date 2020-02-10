@@ -2,20 +2,25 @@
 // Instancias de javascript que necesita materialize
 // ==================================================
 
+// El AutoInit, permite inicializar todo lo que tiene que ver con JS en materializecss
+document.addEventListener('DOMContentLoaded', function() {
+    M.AutoInit();
+});
+
 $('.dropdown-trigger').dropdown({
     'hover':true
 });
 
-$('.modal').modal();
-$('.trigger-modal').modal();
-$('.datepicker').datepicker();
-$('.sidenav').sidenav();
-$('.fixed-action-btn').floatingActionButton();
-$('.materialboxed').materialbox();
-$('.tooltipped').tooltip();
-$('.collapsible').collapsible();
-$('.chips').chips();
-$('.carousel').carousel();
+// $('.modal').modal();
+// $('.trigger-modal').modal();
+// $('.datepicker').datepicker();
+// $('.sidenav').sidenav();
+// $('.fixed-action-btn').floatingActionButton();
+// $('.materialboxed').materialbox();
+// $('.tooltipped').tooltip();
+// $('.collapsible').collapsible();
+// $('.chips').chips();
+// $('.carousel').carousel();
 
 ScrollReveal().reveal('.headline');
 

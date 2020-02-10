@@ -5085,7 +5085,7 @@ small {
 }
 
 .tabs .tab a:focus, .tabs .tab a:focus.active {
-  background-color: rgba(246, 178, 181, 0.2);
+  background-color: rgba(21, 89, 167, 0.2);
   outline: none;
 }
 
