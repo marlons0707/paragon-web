@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
     M.AutoInit();
 });
 
-$('.dropdown-trigger').dropdown({
-    'hover':true
-});
+// $('.dropdown-trigger').dropdown({
+//     'hover':true
+// });
 
 // $('.modal').modal();
 // $('.trigger-modal').modal();
