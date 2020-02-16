@@ -1,0 +1,544 @@
+/* Theme */
+
+:root {
+  --primary: #0074AE;
+  --secondary: #019BC4;
+  --constrast-primary: #666666;
+  --constrast-secondary: #a0a0a0;
+  --title-primary: #111111;
+  --title-secundary: #ffff;
+  --paragraph-primary: #666666;
+  --paragraph-secundary: #ffff;
+}
+
+/* Font */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px !important;
+  color: var(--paragraph-primary);
+}
+
+.text-color-menu {
+  color: var(--title-primary) !important;
+}
+
+.text-color-btn {
+  color: var(--title-secundary) !important;
+}
+
+/* Logo */
+
+header .brand-logo img {
+  height: auto !important;
+  width: 42px !important;
+  margin-top: -2px;
+  margin-left: 10px;
+}
+
+header .brand-logo {
+  padding: 0px !important;
+}
+
+/* Nav */
+
+nav {
+  background-color: transparent !important;
+}
+
+.headroom--pinned {
+  background-color: #EFEFEF !important;
+}
+
+nav ul li {
+  padding-top: 5px !important;
+}
+
+/* Banner */
+
+.head-banner {
+  background-image: url("../img/portada/blanco.jpg");
+  background-size: cover;
+}
+
+.banner {
+  height: calc(100vh) !important;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 400% 0%;
+  }
+}
+
+#animate-area {
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+
+  animation: animatedBackground 100s linear infinite;
+}
+
+/* Portada */
+
+.banner_img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .banner_img {
+    margin-left: 5%;
+
+  }
+}
+
+@media (min-width: 400px) and (max-width: 520px)  { 
+  #banner_div {
+    margin-top: 10%;
+    padding: 10%;
+    margin-bottom: -10%;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 990px)  { 
+  #banner_div {
+    margin-top: 25%;
+    padding: 10%;
+    margin-bottom: -10%;
+  }
+}
+
+@media (min-width: 991px) {
+  #banner_div {
+    margin-top: 5%;
+    padding: 60px;
+    margin-bottom: 0%;
+  }
+}
+
+/* Parallax */
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 400px !important;
+}
+
+.offer {
+  margin-left: 20px;
+  background: #FF5252;
+  background: -webkit-linear-gradient(45deg, #FF5252 0%, #f48fb1 100%);
+  background: linear-gradient(45deg, #FF5252 0%, #f48fb1 100%);
+  color: #fff;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 2px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+/* Headroom CSS */
+
+.headroom {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: .25s -o-transition: .25s -moz-transition: .25s -ms-transition: .25s transition: transform .25s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -108px;
+  -webkit-transition: .25s;
+  -o-transition: .25s;
+  -moz-transition: .25s;
+  -ms-transition: .25s;
+  transition: .25s;
+  -webkit-transform: translateY(-108px);
+  -o-transform: translateY(-108px);
+  -moz-transform: translateY(-108px);
+  -ms-transform: translateY(-108px);
+  transform: translateY(-108px);
+}
+
+.headroom--pinned {
+  top: 0;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  transition: .5s;
+}
+
+/*Vertical Align*/
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 601px) {
+  .navbar-fixed {
+    height: 70px !important;
+  }
+}
+
+/* Side Nav */
+
+.side-nav {
+  top: 70px;
+  width: 250px;
+  height: 100%;
+  overflow-y:scroll;
+}
+
+@media only screen and (max-width : 600px) {
+  .side-nav {
+    top: 56px;
+    width: 250px;
+  }
+}
+
+/* Botones estilos */
+
+.gradient-45deg-theme-blue {
+  background: var(--primary);
+  background: -webkit-linear-gradient(45deg, var(--secondary) 0%, var(--primary) 100%);
+  background: linear-gradient(45deg, var(--secondary) 0%, var(--primary) 100%);
+}
+
+.gradient-45deg-theme-brown {
+  background: var(--constrast-primary);
+  background: -webkit-linear-gradient(45deg, var(--constrast-primary) 0%, var(--constrast-secondary) 100%);
+  background: linear-gradient(45deg, var(--constrast-primary) 0%, var(--constrast-secondary) 100%);
+}
+
+.gradient-45deg-theme-white {
+  background: #EFEFEF;
+  background: -webkit-linear-gradient(45deg, #EFEFEF 0%, #EFEFEF 100%);
+  background: linear-gradient(45deg, #EFEFEF 0%,  100%);
+}
+
+.gradient-45deg-theme.gradient-shadow {
+  box-shadow: 0 6px 20px 0 rgba(244, 143, 177, 0.5);
+}
+
+/* Sections */
+
+/* SECCION EXPERIENCIA
+=====================================================
+===================================================== */
+
+.section-color-img {
+  background-image: linear-gradient(
+      rgb(20, 36, 61),
+      rgba(20, 36, 61, 0.747)),
+        url('../img/page/section_blue/obrero.jpeg');
+  /* width: 100%;
+  height: 400px; */
+  background-size: cover;
+}
+
+.section-color-img2 {
+  background-image: linear-gradient(
+      rgb(20, 36, 61),
+      rgba(20, 36, 61, 0.747)),
+        url('../img/page/section_blue/machine.jpeg');
+  /* width: 100%;
+  height: 400px; */
+  background-size: cover;
+}
+
+.section-color-img p, h3 {
+  color: var(--paragraph-secundary);
+}
+
+
+/* Cuadros de estadisticas */
+
+.shadow-box {
+  /* background: var(--primary); */
+  background: transparent !important;
+  /* background: -webkit-linear-gradient(45deg, var(--secondary) 0%, var(--primary) 100%);
+  background: linear-gradient(45deg, var(--secondary) 0%, var(--primary) 100%); */
+  width: 100%;
+  height: 125px;
+  margin: 20px auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .shadow-box {
+    width: 100%;
+    height: 150px;
+    margin: 20px auto;
+  }
+}
+
+.stats_boxes div p {
+  padding: 10px;
+  border: 1px solid var(--paragraph-primary);
+  border-radius: 8px;
+}
+
+.stats_boxes div p {
+  text-align: center;
+  font-size: 30px !important;
+  color: #f1f2cb;
+  font-weight: 700;
+}
+
+.text_down_box {
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+/* FIN SECCION EXPERIENCIA
+=====================================================
+===================================================== */
+
+.tabs .tab a {
+  color: var(--primary) !important;
+  /*Custom Text Color*/
+}
+
+.tabs .tab a:hover {
+  color:var(--primary) !important;
+  /*Custom Color On Hover*/
+}
+
+.tabs .tab a:focus.active {
+  color:var(--primary) !important;
+  /*Custom Text Color While Active*/
+  background-color: rgba(21, 79, 126, 0.2) !important;
+  /*Custom Background Color While Active*/
+}
+
+.tabs .indicator {
+  background-color:var(--primary) !important;
+  /*Custom Color Of Indicator*/
+}
+
+
+/* ====================================================== */
+/* ====================================================== */
+/* 7 SIDES OF THE DIAMOND CONCEPT */
+
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  margin-left: -1.5px;
+  content: '';
+  background-color: #e9ecef;
+}
+
+.timeline > li {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 50px;
+}
+
+.timeline > li:after, .timeline > li:before {
+  display: table;
+  content: ' ';
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li .timeline-panel {
+  position: relative;
+  float: right;
+  width: 100%;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+.timeline > li .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+.timeline > li .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+.timeline > li .timeline-image {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  text-align: center;
+  color: white;
+  /*border: 7px solid #e9ecef;
+  border-radius: 100%;
+  background-color: var(--secondary);*/
+}
+
+.timeline > li .timeline-image h4 {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 12px;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+
+.timeline .timeline-heading h4 {
+  margin-top: 0px;
+  color: inherit;
+}
+
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+  color: var(--secondary);
+}
+
+.timeline .timeline-body > ul,
+.timeline .timeline-body > p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .timeline:before {
+    left: 50%;
+  }
+  .timeline > li {
+    min-height: 100px;
+    margin-bottom: 100px;
+  }
+  .timeline > li .timeline-panel {
+    float: left;
+    width: 41%;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+  .timeline > li .timeline-image {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 16px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    padding: 0 30px 20px 20px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .timeline > li {
+    min-height: 150px;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+  .timeline > li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .timeline > li {
+    min-height: 170px;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px;
+  }
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
+  .timeline > li .timeline-image h4 {
+    margin-top: 40px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+
+.timeline_title {
+  color: #9CD5E9 !important;
+  font-weight: 700 !important;
+}
+
+/* 7 SIDES OF THE DIAMOND CONCEPT */
+/* ====================================================== */
+/* ====================================================== */
+
+/* Card BPR */
+.card_panel_bpr {
+  background-color: transparent !important;
+}
+
+.card_panel_bpr i {
+  color: #F1F2CB;
+}

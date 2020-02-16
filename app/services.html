@@ -1,0 +1,437 @@
+<!--================================================================================
+    Item Name: Paragon Engineering Web Page
+    Version: 1.0
+    Author: Marlon Saravia
+    Email: <marlons0707@gmail.com>
+    Date: 2020/02/09
+================================================================================ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <title>Paragon Engineering</title>
+    <link rel="icon" href="public/assets/img/logo/logo_black.png" sizes="30x30">
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="public/vendor/materialize/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="public/vendor/materialize/css/materialize.css"> -->
+
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="public/assets/css/custom.css">
+
+    <!-- Materialize Icons -->
+    <link type="text/css" rel="stylesheet" href="public/vendor/materialize/icons/icons.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="public/vendor/animatecss/animate.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header id="header" class="headroom page-topbar">
+        <!-- NAVBAR -->
+        <div class="navbar-fixed">
+            <nav class="navbar-fixed box-shadow-none">
+                <div class="nav-wrapper">
+
+                    <a href="index.html#home" class="brand-logo vertical-align-center">
+                        <img src="public/assets/img/logo/logo_black.png" class="vertical-middle">
+                    </a>
+
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i
+                            class="material-icons black-text">menu</i></a>
+
+                    <ul class="right hide-on-med-and-down">
+                        <li><a class="text-color-menu" href="index.html#home">Home</a></li>
+                        <li><a class="text-color-menu dropdown-trigger" href="javascript:void(0)" data-target="about_dropdown">About Us<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a class="text-color-menu dropdown-trigger" href="javascript:void(0)" data-target="services_dropdown">Services<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a class="text-color-menu dropdown-trigger" href="javascript:void(0)" data-target="experience_dropdown">Experience<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a class="text-color-menu" href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- END NAVBAR -->
+
+        <!-- Dropdown About us -->
+        <ul id="about_dropdown" class="dropdown-content">
+            <li><a class="text-color-menu waves-effect waves-dark" href="index.html#about">About Us</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="index.html#paragon">Why Paragon?</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="index.html#sides">7 Sides <br>of the diamond concept</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="index.html#bpr">The impact of BPR</a></li>
+        </ul>
+
+        <!-- Dropdown Services -->
+        <ul id="services_dropdown" class="dropdown-content">
+            <li><a class="text-color-menu waves-effect waves-dark" href="#consulting">Consulting</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="#leantools">Lean Tools</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="#training">Traning & Certifications</a></li>
+        </ul>
+
+        <!-- Dropdown Experience -->
+        <ul id="experience_dropdown" class="text-color-menu dropdown-content">
+            <li><a class="text-color-menu waves-effect waves-dark" href="experience.html#industries">Industries &<br>Countries</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="experience.html#participants">Participants</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="experience.html#technology">Technology</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="experience.html#forum">Forum</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="experience.html#partners">Business<br>Partners</a>
+            </li>
+        </ul>
+    </header>
+
+    <aside>
+        <ul id="slide-out" class="side-nav sidenav">
+            <li><a class="text-color-menu waves-effect waves-dark" href="index.html#home">Home</a></li>
+
+            <!-- About Us -->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">About Us<i class="material-icons">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="index.html#about">About Us</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="index.html#paragon">Why Paragon?</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="index.html#sides">7 Sides of the diamond</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="index.html#bpr">The impact of BPR</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Services -->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">Services<i class="material-icons">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="#consulting">Consulting</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="#leantools">Lean Tools</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="#training">Traning & Certifications</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Experience -->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">Experience<i class="material-icons">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="experience.html#industries">Industries & Countries</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="experience.html#participants">Participants</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="experience.html#technology">Technology</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="experience.html#forum">Forum</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="experience.html#partners">Business Partners</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a class="text-color-menu waves-effect waves-dark" href="index.html#contact">Contact</a></li>
+
+        </ul>
+    </aside>
+
+    <!-- FLOTANTE - REDES SOCIALES -->
+    <div>
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large waves-effect waves-dark gradient-45deg-theme-white">
+                <i class="large material-icons black-text">add</i>
+            </a>
+            <ul>
+                <li>
+                    <a class="btn-floating gradient-45deg-theme-white" href="javascript:void(0)">
+                        <i class="material-icons black-text">phone</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating gradient-45deg-theme-white" href="javascript:void(0)">
+                        <i class="fab fa-facebook black-text"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating gradient-45deg-theme-white" href="javascript:void(0)">
+                        <i class="fab fa-twitter black-text"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END FLOTANTE - REDES SOCIALES -->
+
+    <!-- CONSULTING SECTION -->
+    <section class="section">
+        <div id="" class="container" style="margin-top: 10%;">
+            <div class="row">
+
+                <div class="col s12 m6 l6">
+                    <div class="section" style="padding: 10px;">
+                        <div class="left-align">
+                            <h3 class="headline grey-text">CONSULTING</h3>
+                        <p>We are a team of Consultants specialized in continuous improvement that work with you to
+                                determine your needs through a diagnosis,
+                                which leads us to create a portfolio of Kaizen projects that, when implemented, allow
+                                you to take your organization to the next level.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <!-- Cuadros -->
+                <div class="col s12 m12 l12">
+                    <div class="stats_boxes">
+                        <div class="col s12 m4 l4">
+                            <p class="headline z-depth-5 shadow-box hoverable">500%+ <span class="text_down_box">Return
+                                    on investment</span></p>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <p class="headline z-depth-5 shadow-box hoverable">2654+ <span
+                                    class="text_down_box">Successful deployments</span></p>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <p class="headline z-depth-5 shadow-box hoverable">30+ <span class="text_down_box">Different
+                                    countries</span></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CONSULTING SECTION -->
+
+     <!-- LEAN TOOLS SECTION -->
+     <section class="section section-color-img2">
+        <div id="leantools" class="container">
+            <div class="row">
+                
+                <!-- Texto -->
+                <div class="col s12 m12 l12">
+                    <div class="section" style="padding: 10px;">
+                        <div class="left-align">
+                            <h3 class="headline">The Impact Of BPR On Organizational Performance</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card info -->
+                <div class="col s12 m12 l12">
+                    <div class="card-panel card_panel_bpr hoverable">
+                        <span class="white-text">
+                            <p class="grey-text text-lighten-2"><i class="headline material-icons">done_all</i> The two cornerstones of any organization are the people and the processes. </p>
+                            <p class="grey-text text-lighten-2"><i class="headline material-icons">done_all</i> If individuals are motivated and working hard, yet the business processes are cumbersome and non-essential activities remain, organizational performance will be poor. </p>
+                            <p class="grey-text text-lighten-2"><i class="headline material-icons">done_all</i> Business Process Reengineering is the key to transforming how people work. </p>
+                            <p class="grey-text text-lighten-2"><i class="headline material-icons">done_all</i> What appear to be minor changes in processes can have dramatic effects on cash flow, service delivery and customer satisfaction. </p>
+                            <p class="grey-text text-lighten-2"><i class="headline material-icons">done_all</i> Even the act of documenting business processes alone will typically improve organizational efficiency by 10%.</p>
+                            <p class="grey-text text-lighten-2"><i class="headline material-icons">done_all</i> By establishing and measuring correctly the Kpi’s in a process, substantial and visible improvements of at least 20% are obtained.</p>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- END LEAN TOOLS SECTION -->
+
+    <!-- TRAINING & CERTIFICATIONS SECTION -->
+    <section class="section">
+        <div id="training" class="container" style="margin-top: 10%;">
+            <div class="row">
+
+                <div class="col s12 m6 l6">
+                    <div class="section" style="padding: 10px;">
+                        <div class="left-align">
+                            <h3 class="headline grey-text">CONSULTING</h3>
+                        <p>We are a team of Consultants specialized in continuous improvement that work with you to
+                                determine your needs through a diagnosis,
+                                which leads us to create a portfolio of Kaizen projects that, when implemented, allow
+                                you to take your organization to the next level.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <!-- Cuadros -->
+                <div class="col s12 m12 l12">
+                    <div class="stats_boxes">
+                        <div class="col s12 m4 l4">
+                            <p class="headline z-depth-5 shadow-box hoverable">500%+ <span class="text_down_box">Return
+                                    on investment</span></p>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <p class="headline z-depth-5 shadow-box hoverable">2654+ <span
+                                    class="text_down_box">Successful deployments</span></p>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <p class="headline z-depth-5 shadow-box hoverable">30+ <span class="text_down_box">Different
+                                    countries</span></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END TRAINING & CERTIFICATIONS SECTION -->
+
+    <footer class="section section-color-img">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 m6 s12">
+              <h4 class="white-text">Paragon Engineering</h4>
+              <p class="grey-text text-lighten-4"><i class="icon-map-marker"></i> 4ta Calle 1-85 Zona 10 San Miguel Petapa, Guatemala, Guatemala</p>
+              <p class="grey-text text-lighten-4"><i class="icon-envelope-o"></i> paragon@gmail.com</p>
+            </div>
+      
+            <div class="col l4 m6 offset-l2 s12">
+              <h4 class="white-text">Redes sociales</h4>
+              <ul class="white-text text-lighten-4">
+                <li><a style="color: white;" href="https://www.facebook.com/itronodegracia/" target="blank"><i style="margin-right: 6px;" class="icon-facebook white-text"></i> Facebook </a></li>
+                <li><a style="color: white;" href="https://www.instagram.com/itronodegracia/" target="blank"><i style="margin-right: 6px;" class="icon-instagram white-text"></i> Instagram </a></li>
+                <li><a style="color: white;" href="https://twitter.com/ITronodeGracia" target="blank"><i style="margin-right: 6px;" class="icon-twitter white-text"></i> Twitter </a></li>
+              </ul>
+            </div>  
+          </div>
+      
+          <div class="row">
+           <div class="col l6 m6 s12" style="border: 1px white solid;">
+            <h4 class="white-text"><i class="material-icons">today</i> Servicios</h4>
+            <ul class="white-text text-lighten-4">
+              <li><b>Servicio:</b> Domingo, 9:30am</li>
+              <li><b>Ayuno:</b> Miércoles, 9:30am</li>
+              <li><b>GDA's:</b> Viernes, 7:30pm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container center-align" _style="padding-bottom: 50px; font-size: 15px; color: white;">
+          <p>© 2020 paragon web</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="public/vendor/jquery/jquery-2.1.1.min.js"></script>
+
+    <!-- Efecto scroll -->
+    <script src="public/vendor/jquery/scrollreveal/scrollreveal.js"></script>
+
+    <!-- Materialize CSS  -->
+    <script type="text/javascript" src="public/vendor/materialize/js/materialize.min.js"></script>
+
+    <!-- Efectos JS para materialize -->
+    <script type="text/javascript" src="public/assets/js/materializeEffects.js"></script>
+
+    <script type="text/javascript" src="public/assets/js/headroom.js"></script>
+
+    <!-- Fontawesome Icons -->
+    <script async src="public/vendor/fontawesome/fawesome.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Select all links with hashes
+            $('a[href*="#"]')
+                // Remove links that don't actually link to anything
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function (event) {
+                    // On-page links
+                    if (
+                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                        location.hostname == this.hostname
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000, function () {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) { // Checking if the target was focused
+                                    return false;
+                                } else {
+                                    $target.attr('tabindex',
+                                        '-1'); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                };
+                            });
+                        }
+                    }
+                });
+            // grab an element
+            var myElement = document.querySelector("header");
+            // construct an instance of Headroom, passing the element
+            var headroom = new Headroom(myElement);
+            // initialise
+            headroom.init();
+        });
+    </script>
+
+    <!-- Start of Async Drift Code -->
+    <script>
+        /*
+        ! function () {
+            var t;
+            if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void(window
+                .console &&
+                console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+                t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide",
+                    "off",
+                    "on"
+                ],
+                t.factory = function (e) {
+                    return function () {
+                        var n;
+                        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+                    };
+                }, t.methods.forEach(function (e) {
+                    t[e] = t.factory(e);
+                }), t.load = function (t) {
+                    var e, n, o, i;
+                    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src =
+                        "https://js.driftt.com/include/" + i + "/" + t + ".js",
+                        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+                });
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('6ashbsefxhx7');
+        */
+    </script>
+    <!-- End of Async Drift Code -->
+
+</body>
+
+</html>
