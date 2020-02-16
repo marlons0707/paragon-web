@@ -47,6 +47,43 @@ p {
   background: linear-gradient(45deg, var(--secondary) 0%, var(--primary) 100%);
 }
 
+
+ /* color personalidado a inputs en login */
+/* label focus color */
+.input-field input[type=text]:focus+label,
+.materialize-textarea:focus:not([readonly])+label {
+  color: black !important;
+}
+
+.input-field input[type=password]:focus+label,
+.materialize-textarea:focus:not([readonly])+label {
+  color: black !important;
+}
+
+.input-field input[type=email]:focus+label,
+.materialize-textarea:focus:not([readonly])+label {
+  color: black !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid black !important;
+  box-shadow: 0 1px 0 0 black !important;
+}
+
+.input-field input[type=password]:focus,
+.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid black !important;
+  box-shadow: 0 1px 0 0 black !important;
+}
+
+.input-field input[type=email]:focus,
+.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid black !important;
+  box-shadow: 0 1px 0 0 black !important;
+}
+
 /* Logo */
 
 header .brand-logo img {
@@ -144,8 +181,14 @@ nav ul li {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 400px !important;
+  height: 300px !important;
 }
+/* 
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 400px !important;
+} */
 
 /*
 .offer {
