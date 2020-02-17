@@ -28,6 +28,16 @@ p {
   color: var(--paragraph-primary);
 }
 
+.ul_style {
+  font-size: 14px !important;
+  color: var(--paragraph-primary);
+}
+
+.ul_style li i {
+  font-size: 14px !important;
+  color: var(--secondary);
+}
+
 .text-color-menu {
   color: var(--title-primary) !important;
 }
@@ -597,4 +607,18 @@ nav ul li {
 
 .card_panel_bpr i {
   color: #F1F2CB;
+}
+
+/* First Section Page */
+
+@media only screen and (max-width: 1000px) {
+  .first_section {
+    margin-top: 12%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .first_section {
+    margin-top: 6%;
+  }
 }
