@@ -173,55 +173,37 @@
 
     <!-- INDUSTRIES & COUNTRIES SECTION -->
     <section class="section">
-        <div id="industries" class="container" style="margin-top: 10%;">
+        <div id="industries" class="container first_section">
             <div class="row">
-
-                <div class="col s12 m6 l6">
-                    <div class="section" style="padding: 10px;">
-                        <div class="left-align">
-                            <h3 class="headline grey-text">INDUSTRIES & COUNTRIES</h3>
-                        </div>
-                    </div>
+                <!-- Texto -->
+                <div class="center-align">
+                    <h3 class="headline grey-text">INDUSTRIES & COUNTRIES</h3>
                 </div>
-
             </div>
 
             <div class="row">
                 
-                <div class="slider">
-                    <ul class="slides black">
-                        <li>
-                            <img src="../../public/assets/img/slide/mapa.jpg">
-                            <div class="caption center-align">
-                                <h1><b>TATA</b></h1>
-                                <h5 class="light grey-text text-lighten-3" style="margin-top: -20px;"><b>ACCESORIOS GLOBALES S.A.</b></h5>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="../../public/assets/img/slide/cinturones1.jpg" style="width: 100%; height: 350px">
-                            <div class="caption left-align">
-                                <h1 class=""><b>AGILIDAD</b></h1>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="../../public/assets/img/slide/cinturones2.jpg" style="width: 100%; height: 350px">
-                            <div class="caption right-align">
-                                <h1 class=""><b>HONESTIDAD</b></h1>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="../../public/assets/img/slide/cinturones3.jpg" style="width: 100%; height: 350px">
-                            <div class="caption left-align">
-                                <h1 class=""><b>AMBICIÓN</b></h>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="../../public/assets/img/slide/cinturones4.jpg" style="width: 100%; height: 350px">
-                            <div class="caption right-align">
-                                <h1 class=""><b>RESPETO</b></h1>
-                            </div>
-                        </li>
-                    </ul>
+                <!-- Countries -->
+                <div class="col s12 m12 l12">
+                    <div class="carousel" style="margin-top: -5%;">
+                        <a class="carousel-item" href="javascript:void(0)"><img src="public/assets/img/page/images/PASISES/GUATEMALA/Imagen96.png"></a>
+                        <a class="carousel-item" href="javascript:void(0)"><img src="public/assets/img/page/images/PASISES/USA/Imagen72.png"></a>
+                        <a class="carousel-item" href="javascript:void(0)"><img src="public/assets/img/page/images/PASISES/COSTARICA/Imagen86.png"></a>
+                        <a class="carousel-item" href="javascript:void(0)"><img src="public/assets/img/page/images/PASISES/NICARAGUA/Imagen96.jpg"></a>
+                        <a class="carousel-item" href="javascript:void(0)"><img src="public/assets/img/page/images/PASISES/ECUADOR/Imagen73.png"></a>
+                    </div>
+                </div>
+
+                <!-- Industries -->
+                <div class="col s12 m12 l12" style="margin-top: -20%;">
+                    <div class="carousel">
+                        <a class="carousel-item" href="javascript:void(0)"><img src="public/assets/img/page/images/MANUFACTURA_Y_SERVICIOS/Imagen1.jpg"></a>
+                        <a class="carousel-item" href="javascript:void(0)"><img src="public/assets/img/page/images/MANUFACTURA_Y_SERVICIOS/Imagen2.png"></a>
+                        <a class="carousel-item" href="javascript:void(0)"><img src="public/assets/img/page/images/MANUFACTURA_Y_SERVICIOS/Imagen4.jpg"></a>
+                        <a class="carousel-item" href="javascript:void(0)"><img src="public/assets/img/page/images/MANUFACTURA_Y_SERVICIOS/Imagen6.jpg"></a>
+                        <a class="carousel-item" href="javascript:void(0)"><img src="public/assets/img/page/images/MANUFACTURA_Y_SERVICIOS/Imagen7.jpg"></a>
+                        <a class="carousel-item" href="javascript:void(0)"><img src="public/assets/img/page/images/MANUFACTURA_Y_SERVICIOS/Imagen8.jpg"></a>
+                    </div>
                 </div>
 
             </div>
@@ -442,90 +424,17 @@
     <!-- Efectos JS para materialize -->
     <script type="text/javascript" src="public/assets/js/materializeEffects.js"></script>
 
+    <!-- Headroom -->
     <script type="text/javascript" src="public/assets/js/headroom.js"></script>
 
     <!-- Fontawesome Icons -->
     <script async src="public/vendor/fontawesome/fawesome.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            // Select all links with hashes
-            $('a[href*="#"]')
-                // Remove links that don't actually link to anything
-                .not('[href="#"]')
-                .not('[href="#0"]')
-                .click(function (event) {
-                    // On-page links
-                    if (
-                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-                        location.hostname == this.hostname
-                    ) {
-                        // Figure out element to scroll to
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        // Does a scroll target exist?
-                        if (target.length) {
-                            // Only prevent default if animation is actually gonna happen
-                            event.preventDefault();
-                            $('html, body').animate({
-                                scrollTop: target.offset().top
-                            }, 1000, function () {
-                                // Callback after animation
-                                // Must change focus!
-                                var $target = $(target);
-                                $target.focus();
-                                if ($target.is(":focus")) { // Checking if the target was focused
-                                    return false;
-                                } else {
-                                    $target.attr('tabindex',
-                                        '-1'); // Adding tabindex for elements not focusable
-                                    $target.focus(); // Set focus again
-                                };
-                            });
-                        }
-                    }
-                });
-            // grab an element
-            var myElement = document.querySelector("header");
-            // construct an instance of Headroom, passing the element
-            var headroom = new Headroom(myElement);
-            // initialise
-            headroom.init();
-        });
-    </script>
+    <!-- Links repair -->
+    <script src="public/assets/js/links.js"></script>
 
     <!-- Start of Async Drift Code -->
-    <script>
-        /*
-        ! function () {
-            var t;
-            if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void(window
-                .console &&
-                console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
-                t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide",
-                    "off",
-                    "on"
-                ],
-                t.factory = function (e) {
-                    return function () {
-                        var n;
-                        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-                    };
-                }, t.methods.forEach(function (e) {
-                    t[e] = t.factory(e);
-                }), t.load = function (t) {
-                    var e, n, o, i;
-                    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
-                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src =
-                        "https://js.driftt.com/include/" + i + "/" + t + ".js",
-                        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-                });
-        }();
-        drift.SNIPPET_VERSION = '0.3.1';
-        drift.load('6ashbsefxhx7');
-        */
-    </script>
-    <!-- End of Async Drift Code -->
+    <script async src="public/assets/js/driftCode.js"></script>
 
 </body>
 

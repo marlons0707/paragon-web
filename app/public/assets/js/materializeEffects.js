@@ -7,6 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
     M.AutoInit();
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems, {'height' : 350, 'indicators' : true, 'duration' : 250});
+});
+
+ScrollReveal().reveal('.headline');
+
 // $('.dropdown-trigger').dropdown({
 //     'hover':true
 // });
@@ -22,9 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // $('.chips').chips();
 // $('.carousel').carousel();
 
-ScrollReveal().reveal('.headline');
 
-// Toasts
+// Toasts @author Marlon Saravia
 function AlertToast(message,icon,color){
     var toastHTML = '<span>'+message+'&nbsp;</span><i class="material-icons'+' '+color+'-text'+'">'+icon+'</i>';
     return M.toast({html: toastHTML, classes: 'rounded'});
