@@ -614,7 +614,7 @@ nav ul li {
 
 @media only screen and (max-width: 1000px) {
   .first_section {
-    margin-top: 12%;
+    margin-top: 14%;
   }
 }
 
@@ -623,3 +623,42 @@ nav ul li {
     margin-top: 6%;
   }
 }
+
+ol {
+  list-style-type: none;
+}
+
+.li_title {
+  font-weight: 700;
+  color: var(--paragraph-primary);
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .slider_industries {
+    padding-top: 0;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .slider_industries {
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+  }
+}
+
+.img_pasises {
+  border-radius: 10px;
+}
+
+.participants_img {
+  border-radius: 10px;
+}
+
+
+  
