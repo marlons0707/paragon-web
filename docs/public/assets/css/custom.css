@@ -671,3 +671,16 @@ ol {
   font-style: italic;
 }
   
+
+@media only screen and (max-width: 1000px) {
+  .img_partners {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .img_partners {
+    width: 30%;
+  }
+}
+
