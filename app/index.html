@@ -530,30 +530,37 @@
                     </div>
                 </div>
 
-                <!-- Formulario -->
-                <form class="col s12 m6 l6" style="padding-left: 50px; padding-right: 50px;"> 
+                <!-- Formulario de contacto -->
+                <form id="contact-form" class="col s12 m6 l6" style="padding-left: 50px; padding-right: 50px;"> 
+                    <input type="hidden" name="contact_number">
                     <div class="row">
                       <div class="row">
                         <div class="input-field col s12 m12 l12">
-                          <input  id="first_name" type="text" class="validate">
-                          <label for="first_name">Your Name</label>
+                          <input  id="user_name" name="user_name" type="text" class="validate">
+                          <label for="user_name">Your Name</label>
                         </div>  
                       </div>
                       <div class="row">
                         <div class="input-field col s12 m12 l12">
-                          <input id="email" type="email" class="validate">
-                          <label for="email">Your Email</label>
+                          <input id="user_email" name="user_email" type="email" class="validate">
+                          <label for="user_email">Your Email</label>
                         </div>
                       </div>
                       <div class="row">
                         <div class="input-field col s12 m12 l12">
-                          <textarea id="textarea1" class="materialize-textarea"></textarea>
-                          <label for="textarea1">Your Comment</label>
+                          <input id="user_subject" name="user_subject" type="text" class="validate">
+                          <label for="user_subject">Your Subject</label>
                         </div>
                       </div>
                       <div class="row">
                         <div class="input-field col s12 m12 l12">
-                          <button class="btn waves-effect waves-light gradient-45deg-theme-blue mt-2 btn z-depth-5 text-color-btn" type="submit" name="action">Send Mail
+                          <textarea id="user_message" name="user_message" class="materialize-textarea"></textarea>
+                          <label for="user_message">Your Comment</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12 m12 l12">
+                          <button id="btn_send" class="btn waves-effect waves-light gradient-45deg-theme-blue btn z-depth-5 text-color-btn" type="submit">Send Mail
                             <i class="material-icons right">send</i>
                           </button>
                         </div>
@@ -659,6 +666,11 @@
 
     <!-- Start of Async Drift Code -->
     <script async src="public/assets/js/driftCode.js"></script>
+
+    <!-- Send Email -->
+    <script src="public/assets/js/emailJS.js"></script>
+    <script src="public/assets/js/sendEmail.js"></script>
+    
 
 </body>
 
