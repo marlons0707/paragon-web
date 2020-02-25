@@ -8,7 +8,14 @@ window.onload = function() {
         // generate the contact number value
         this.contact_number.value = Math.random() * 100000 | 0;
         if (emailjs.sendForm('web_marlon_saravia', 'template_ls2K9dyn_clone', this)) {
-            AlertToast('Thanks, message sent', 'done', 'green')
+            AlertToast('Thanks, message sent', 'done', 'green');
+
+            $('#user_name').val('');
+            $('#user_email').val('');
+            $('#user_subject').val('');
+            $('#user_message').val('');
+            $('#user_name').focus();
+
         };
     });
 }
