@@ -1,0 +1,594 @@
+<!--================================================================================
+    Item Name: Paragon Engineering Web Page
+    Version: 1.0
+    Author: Marlon Saravia
+    Email: <marlons0707@gmail.com>
+    Date: 2020/02/09
+================================================================================ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <title>Paragon Engineering</title>
+    <link rel="icon" href="../public/assets/img/logo/logo_black.png" sizes="30x30">
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="../public/vendor/materialize/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="../public/vendor/materialize/css/materialize.css"> -->
+
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="../public/assets/css/custom.css">
+
+    <!-- Materialize Icons -->
+    <link type="text/css" rel="stylesheet" href="../public/vendor/materialize/icons/icons.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="../public/vendor/animatecss/animate.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header id="header" class="headroom page-topbar">
+        <!-- NAVBAR -->
+        <div class="navbar-fixed">
+            <nav class="navbar-fixed box-shadow-none">
+                <div class="nav-wrapper">
+
+                    <a href="index.html#home" class="brand-logo vertical-align-center">
+                        <img src="../public/assets/img/logo/logo_black.png" class="vertical-middle">
+                    </a>
+
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i
+                            class="material-icons black-text">menu</i></a>
+
+                    <ul class="right hide-on-med-and-down">
+                        <li><a class="text-color-menu" href="index.html#home">Home</a></li>
+                        <li><a class="text-color-menu dropdown-trigger" href="javascript:void(0)" data-target="about_dropdown">About Us<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a class="text-color-menu dropdown-trigger" href="javascript:void(0)" data-target="services_dropdown">Services<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a class="text-color-menu dropdown-trigger" href="javascript:void(0)" data-target="experience_dropdown">Experience<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a class="text-color-menu" href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- END NAVBAR -->
+
+        <!-- Dropdown About us -->
+        <ul id="about_dropdown" class="dropdown-content">
+            <li><a class="text-color-menu waves-effect waves-dark" href="index.html#about">About Us</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="index.html#paragon">Why Paragon?</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="index.html#sides">7 Sides <br>of the diamond concept</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="index.html#bpr">The impact of BPR</a></li>
+        </ul>
+
+        <!-- Dropdown Services -->
+        <ul id="services_dropdown" class="dropdown-content">
+            <li><a class="text-color-menu waves-effect waves-dark" href="services.html">Consulting</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="services.html#leantools">Lean Tools</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="services.html#training">Traning & Certifications</a></li>
+        </ul>
+
+        <!-- Dropdown Experience -->
+        <ul id="experience_dropdown" class="text-color-menu dropdown-content">
+            <li><a class="text-color-menu waves-effect waves-dark" href="#industries">Industries &<br>Countries</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="#participants">Participants</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="#technology">Technology</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="#forum">Forum</a></li>
+            <li><a class="text-color-menu waves-effect waves-dark" href="#partners">Business<br>Partners</a>
+            </li>
+        </ul>
+    </header>
+
+    <aside>
+        <ul id="slide-out" class="side-nav sidenav">
+            <li><a class="text-color-menu waves-effect waves-dark" href="index.html#home">Home</a></li>
+
+            <!-- About Us -->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">About Us<i class="material-icons">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="index.html#about">About Us</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="index.html#paragon">Why Paragon?</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="index.html#sides">7 Sides of the diamond</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="index.html#bpr">The impact of BPR</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Services -->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">Services<i class="material-icons">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="services.html">Consulting</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="services.html#leantools">Lean Tools</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="services.html#training">Traning & Certifications</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Experience -->
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">Experience<i class="material-icons">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="#industries">Industries & Countries</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="#participants">Participants</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="#technology">Technology</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="#forum">Forum</a></li>
+                                <li><a class="text-color-menu waves-effect waves-dark" href="#partners">Business Partners</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a class="text-color-menu waves-effect waves-dark" href="index.html#contact">Contact</a></li>
+
+        </ul>
+    </aside>
+
+    <!-- FLOTANTE - REDES SOCIALES -->
+    <div>
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large waves-effect waves-dark gradient-45deg-theme-white">
+                <i class="large material-icons black-text">add</i>
+            </a>
+            <ul>
+                <li>
+                    <a class="btn-floating gradient-45deg-theme-white" href="javascript:void(0)">
+                        <i class="fab fa-twitter black-text"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating gradient-45deg-theme-white" href="javascript:void(0)">
+                        <i class="fab fa-linkedin black-text"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END FLOTANTE - REDES SOCIALES -->
+
+    <!-- INDUSTRIES & COUNTRIES SECTION -->
+    <section class="section">
+        <div id="industries" class="container first_section">
+            <div class="row">
+                <!-- Texto -->
+                <div class="left-align">
+                    <h3 class="headline grey-text">INDUSTRIES & COUNTRIES</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                
+                <!-- Countries -->
+                <div class="left-align">  
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <!-- Slider Ind & Countries -->
+                            <div class="headline slider_industries">
+                                <div class="slider">
+                                    <ul class="slides black z-depth-2 hoverable">
+                                       <!-- GUATEMALA -->
+                                       <li>
+                                            <img src="../public/assets/img/page/images/PASISES/GUATEMALA/Imagen98.jpg" style="width: 100%; height: 350px">
+                                            <div class="caption left-align">
+                                                <h4 class=""><b>GUATEMALA</b></h4>
+                                            </div>
+                                        </li>
+                                        <!-- USA -->
+                                        <li>
+                                            <img src="../public/assets/img/page/images/PASISES/USA/Imagen67.jpg" style="width: 100%; height: 350px">
+                                            <div class="caption left-align">
+                                                <h4 class=""><b>USA</b></h4>
+                                            </div>
+                                        </li>
+                                        <!-- NICARAGUA -->
+                                        <li>
+                                            <img src="../public/assets/img/page/images/PASISES/NICARAGUA/Imagen94.jpg" style="width: 100%; height: 350px">
+                                            <div class="caption left-align">
+                                                <h4 class=""><b>NICARAGUA</b></h4>
+                                            </div>
+                                        </li>
+                                        <!-- COSTARICA -->
+                                        <li>
+                                            <img src="../public/assets/img/page/images/PASISES/COSTARICA/Imagen89.jpg" style="width: 100%; height: 350px">
+                                            <div class="caption left-align">
+                                                <h4 class=""><b>COSTA RICA</b></h4>
+                                            </div>
+                                        </li>
+                                        <!-- ECUADOR -->
+                                        <li>
+                                            <img src="../public/assets/img/page/images/PASISES/ECUADOR/Imagen85.jpg" style="width: 100%; height: 350px">
+                                            <div class="caption left-align">
+                                                <h4 class=""><b>ECUADOR</b></h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- List Industries -->
+                        <div class="col l3 s12 headline">
+                            <h5 class="grey-text">Industries</h5>
+                            <ul class="ul_industries">
+                                <li class="li_title">BPO</li>
+                                <li class="li_title">Manufacturing</li>
+                                <li>
+                                    <ol>
+                                        <li><i class="material-icons black-text icon_footer">chevron_right</i>Food</li>
+                                        <li><i class="material-icons black-text icon_footer">chevron_right</i>Pharmaceutical</li>
+                                        <li><i class="material-icons black-text icon_footer">chevron_right</i>Oil & Gas exploration</li>
+                                        <li><i class="material-icons black-text icon_footer">chevron_right</i>Clothing & Garment</li>
+                                    </ol>
+                                </li>
+                                <li class="li_title">Service</li>
+                                <li>
+                                    <ol>
+                                        <li><i class="material-icons black-text icon_footer">chevron_right</i>Energy</li>
+                                        <li><i class="material-icons black-text icon_footer">chevron_right</i>BP Outsource</li>
+                                        <li><i class="material-icons black-text icon_footer">chevron_right</i>Financial Institutions</li>
+                                        <li><i class="material-icons black-text icon_footer">chevron_right</i>Health</li>
+                                        <li><i class="material-icons black-text icon_footer">chevron_right</i>Technological</li>
+                                    </ol>
+                                </li>
+                                <li class="li_title">Agro-industrial</li>
+                                <li>
+                                    <ol>
+                                        <li><i class="material-icons black-text icon_footer">chevron_right</i>Sugar Mills</li>
+                                        <li><i class="material-icons black-text icon_footer">chevron_right</i>Coffee Mills & Exporting</li>
+                                    </ol>
+                                </li>
+                                <li class="li_title">Supply Chain</li>
+                                <li class="li_title">Government & ONG’s</li>
+                            </ul>
+                        </div>
+                        <!-- List Countries -->
+                        <div class="col l3 s12 headline">
+                            <h5 class="grey-text">Countries</h5>
+                            <ul>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> Canada</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> USA</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> Mexico</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> Guatemala</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> El Salvador</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> Nicaragua</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> Costa Rica</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> Panama</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> Colombia</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> Peru</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> Bolivia</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> Ecuador</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> Venezuela</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> Argentina</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> Chile</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> Brazil</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> Pakistan</a></li>
+                                <li><a class="black-text" href="javascript:void(0)"><i class="material-icons grey-text text-darken-2 icon_footer">done</i> England</a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- END INDUSTRIES & COUNTRIES SECTION -->
+
+    <!-- PARTICIPANTS SECTION -->
+    <section class="section section-color-img2">
+        <div id="participants" class="container">
+
+            <div class="row">
+                <!-- Texto -->
+                <div class="left-align">
+                    <h3 class="headline">PARTICIPANTS</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <img class="headline participants_img z-depth-5 hoverable" width="100%" src="../public/assets/img/page/clients.jpg">
+            </div>
+
+            <div class="row">
+                <div class="section">
+                    <div class="center-align">
+                        <img class="headline img_pasises z-depth-5 hoverable" src="../public/assets/img/page/paises.png" width="80%">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- PARTICIPANTS SECTION -->
+
+    <!-- TECHNOLOGY SECTION -->
+    <section class="section">
+        <div id="technology" class="container">
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <div class="section" style="padding: 10px;">
+                        <div class="left-align">
+                            <h3 class="headline grey-text">TECHNOLOGY</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Cuadros -->
+                <div class="col s12 m12 l12">
+
+                    <ul class="collection">
+                        
+                        <li class="collection-item avatar headline">
+                          <i class="material-icons circle">settings</i>
+                          <span class="title">OEE Toolkit</span>
+                          <!-- <p>First Line</p> -->
+                          <a href="#!" class="secondary-content"></a>
+                        </li>
+
+                        <li class="collection-item avatar headline">
+                          <i class="material-icons circle green">insert_chart</i>
+                          <span class="title">Onebeat</span>
+                          <!-- <p>First Line</p> -->
+                          <a href="#!" class="secondary-content"></a>
+                        </li>
+
+                        <li class="collection-item avatar headline">
+                          <i class="material-icons circle purple">today</i>
+                          <span class="title">Fastreact</span>
+                          <!-- <p>First Line</p> -->
+                          <a href="#!" class="secondary-content"></a>
+                        </li>
+
+                        <li class="collection-item avatar headline">
+                            <i class="material-icons circle yellow darken-1">trending_up</i>
+                            <span class="title">MP10</span>
+                            <!-- <p>First Line</p> -->
+                            <a href="#!" class="secondary-content"></a>
+                          </li>
+
+                          <li class="collection-item avatar headline">
+                            <i class="material-icons circle blue">timelapse</i>
+                            <span class="title">Minitab</span>
+                            <!-- <p>First Line</p> -->
+                            <a href="#!" class="secondary-content"></a>
+                          </li>
+
+                          <li class="collection-item avatar headline">
+                            <i class="material-icons circle red">sync</i>
+                            <span class="title">Reddin</span>
+                            <!-- <p>First Line</p> -->
+                            <a href="#!" class="secondary-content"></a>
+                          </li>
+                      </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- END TECHNOLOGY SECTION -->
+
+    <!-- FORUM SECTION -->
+    <section class="section section-color-img2">
+        <div id="forum" class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="section">
+                        <div class="left-align">
+                            <h3 class="headline">FORUM</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informacion -->
+            <div class="col s12">
+
+                <div class="">
+                    <div class="left-align">
+                        <h5 class="headline white-text">TRAININGS</h5>
+                    </div>
+                    
+                    <div class="collection">
+                        <a href="javascript:void(0)" class="collection-item grey-text text-darken-4">Lean Six Sigma
+                            <span class="lean_subs yellow-text text-darken-2">Yellow Belt</span>
+                            <span class="lean_subs green-text">Green Belt</span>
+                            <span class="lean_subs black-text">Black Belt</span>
+                        </a>
+                        <a href="javascript:void(0)" class="collection-item grey-text text-darken-4">Lean Tools</a>
+                        <a href="javascript:void(0)" class="collection-item grey-text text-darken-4">Lean Champion</a>
+                        <a href="javascript:void(0)" class="collection-item grey-text text-darken-4">Total Quality Management</a>
+                        <a href="javascript:void(0)" class="collection-item grey-text text-darken-4">Project Management</a>
+                        <a href="javascript:void(0)" class="collection-item grey-text text-darken-4">Process analysis & Documentation</a>
+                        <a href="javascript:void(0)" class="collection-item grey-text text-darken-4">Christian Leadership</a>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="left-align">
+                        <h5 class="headline white-text">INDUSTRIES</h5>
+                    </div>
+    
+                    <ul class="headline collapsible expandable">
+                        <li><div class="collapsible-header">BPO</div></li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">expand_more</i>Manufacturing
+                            </div>
+                            <div class="collapsible-body grey lighten-4">
+                                <span>
+                                    <ul class="ul_style">
+                                        <li><i class="material-icons">chevron_right</i> Food</li>
+                                        <li><i class="material-icons">chevron_right</i> Pharmaceutical</li>
+                                        <li><i class="material-icons">chevron_right</i> Oil & Gas exploration</li>
+                                        <li><i class="material-icons">chevron_right</i> Clothing & Garment</li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">expand_more</i>Service
+                            </div>
+                            <div class="collapsible-body grey lighten-4">
+                                <span>
+                                    <ul class="ul_style">
+                                        <li><i class="material-icons">chevron_right</i>Energy</li>
+                                        <li><i class="material-icons">chevron_right</i>Business Process Outsource</li>
+                                        <li><i class="material-icons">chevron_right</i>Financial Institutions</li>
+                                        <li><i class="material-icons">chevron_right</i>Health</li>
+                                        <li><i class="material-icons">chevron_right</i>Technological</li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">expand_more</i>Agro-industrial
+                            </div>
+                            <div class="collapsible-body grey lighten-4">
+                                <span>
+                                    <ul class="ul_style">
+                                        <li><i class="material-icons">chevron_right</i>Sugar Mills</li>
+                                        <li><i class="material-icons">chevron_right</i>Coffee Mills & Exporting</li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </li>
+                        <li><div class="collapsible-header">Supply Chain</div></li>
+                        <li><div class="collapsible-header">Government & ONG’s</div></li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- END FORUM SECTION -->
+
+     <!-- BUSINESS PARTNERS SECTION -->
+     <section class="section">
+        <div id="partners" class="container">
+            <div class="row">
+                
+                <!-- Texto -->
+                <div class="col s12 m12 l12">
+                    <div class="section">
+                        <div class="left-align">
+                            <h3 class="headline grey-text">BUSINESS PARTNERS</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partners -->
+                <div class="row">
+                    <div class="center-align">
+                        <img class="img_partners" src="../public/assets/img/page/partners/pbs.jpg">
+                        <br><br>
+                        <img class="img_partners" src="../public/assets/img/page/partners/toc.jpg">
+                        <br><br>
+                        <img class="img_partners" src="../public/assets/img/page/partners/six_us.png">
+                        <br><br><br>
+                        <img style="background-color: #43CCDE;" class="img_partners" src="../public/assets/img/page/partners/incito.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- END BUSINESS PARTNERS SECTION -->
+
+    <footer class="page-footer section-color-img">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Paragon Engineering</h5>
+                <p class="grey-text text-lighten-4">We are a Consultants team specialized in continuous improvement, that works with you to determine your needs through a diagnosis, which leads us to create a Portfolio of Kaizen projects that, when is implemented, it allows you to take your organization to a whonext level.</p>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text">Customers</h5>
+              <ul>
+                <li><a class="white-text" href="javascript:void(0)"><i class="material-icons icon_footer">done</i> Campero</a></li>
+                <li><a class="white-text" href="javascript:void(0)"><i class="material-icons icon_footer">done</i> Kellogs</a></li>
+                <li><a class="white-text" href="javascript:void(0)"><i class="material-icons icon_footer">done</i> Pasta Ina</a></li>
+                <li><a class="white-text" href="javascript:void(0)"><i class="material-icons icon_footer">done</i> National Foods</a></li>
+                <li><a class="white-text" href="javascript:void(0)"><i class="material-icons icon_footer">done</i> Dean Foods</a></li>
+                <li><a class="white-text" href="javascript:void(0)"><i class="material-icons icon_footer">done</i> Kroger</a></li>
+                <li><a class="white-text" href="javascript:void(0)"><i class="material-icons icon_footer">done</i> Unipharm</a></li>
+              </ul>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text">Connect</h5>
+              <ul>
+                <li><a class="white-text" href="javascript:void(0)"><i class="fab fa-linkedin icon_footer"></i> LinkedIn</a></li>
+                <li><a class="white-text" href="javascript:void(0)"><i class="fab fa-twitter icon_footer"></i> Twitter</a></li>
+                <li><a class="white-text" href="javascript:void(0)"><i class="fab fa-instagram icon_footer"></i> Instagram</a></li>
+                <li><a class="white-text" href="javascript:void(0)"><i class="fab fa-facebook icon_footer"></i> Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <div>
+                <a href="#home" style="color: #F1F2CB;">Paragon Engineering </a>© 2020
+            </div>
+            <div>
+                About <a target="_blank" href="https://marlons0707.github.io/" style="color: #F1F2CB;">Developer</a>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="../public/vendor/jquery/jquery-2.1.1.min.js"></script>
+
+    <!-- Efecto scroll -->
+    <script src="../public/vendor/jquery/scrollreveal/scrollreveal.js"></script>
+
+    <!-- Materialize CSS  -->
+    <script type="text/javascript" src="../public/vendor/materialize/js/materialize.min.js"></script>
+
+    <!-- Efectos JS para materialize -->
+    <script type="text/javascript" src="../public/assets/js/materializeEffects.js"></script>
+
+    <!-- Headroom -->
+    <script type="text/javascript" src="../public/assets/js/headroom.js"></script>
+
+    <!-- Fontawesome Icons -->
+    <script async src="../public/vendor/fontawesome/fawesome.js"></script>
+
+    <!-- Links repair -->
+    <script src="../public/assets/js/links.js"></script>
+
+    <!-- Start of Async Drift Code -->
+    <script async src="../public/assets/js/driftCode.js"></script>
+
+</body>
+
+</html>

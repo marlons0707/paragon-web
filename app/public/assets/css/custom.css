@@ -1,5 +1,6 @@
 /* Theme */
 
+
 :root {
   --primary: #0074AE;
   --secondary: #019BC4;
@@ -9,6 +10,19 @@
   --title-secundary: #ffff;
   --paragraph-primary: #666666;
   --paragraph-secundary: #ffff;
+}
+
+
+@media only screen and (max-width: 450px) {
+  .logo_lenguage {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .logo_lenguage {
+    width: 50%;
+  }
 }
 
 /* Font */
